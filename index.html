@@ -135,19 +135,75 @@
     <div class="hero">
         <h1>Cyt3rTools</h1>
         <div class="divider"></div>
-        <p class="sub">Inteligencia de fuentes abiertas, endurecimiento de sistemas y operaciones confidenciales de privacidad digital.</p>
+        <p class="sub">Inteligencia de fuentes abiertas, desarrollo web, herramientas a medida y operaciones de privacidad digital para particulares.</p>
     </div>
 
     <div class="grid">
-        <div class="card"><h3>Auditoría de Privacidad</h3><p>Análisis integral de exposición digital y supresión de vectores de fuga de información.</p></div>
-        <div class="card"><h3>Hardening de Dispositivos</h3><p>Configuración avanzada de seguridad para neutralizar interceptaciones y telemetría.</p></div>
-        <div class="card"><h3>Análisis OSINT Ético</h3><p>Verificación forense de antecedentes públicos y autenticidad de perfiles digitales.</p></div>
-        <div class="card"><h3>Gestión de Credenciales</h3><p>Implementación de arquitecturas de autenticación robustas y cifrado local.</p></div>
+        <div class="card">
+            <h3>Auditoría de Huella Digital</h3>
+            <p>Investigación exhaustiva mediante fuentes abiertas para mapear toda la información pública existente en internet, entregando un reporte detallado de exposición.</p>
+        </div>
+        <div class="card">
+            <h3>Chequeo de Credenciales (Dark Web)</h3>
+            <p>Verificación remota en bases de datos y repositorios de filtraciones masivas para comprobar si tus cuentas han sido comprometidas.</p>
+        </div>
+        <div class="card">
+            <h3>Análisis Forense de Archivos (Sandbox)</h3>
+            <p>Recepción controlada de archivos o ejecutables dudosos para analizarlos en un entorno aislado y descartar código malicioso.</p>
+        </div>
+        <div class="card">
+            <h3>Simulación de Phishing Personalizado</h3>
+            <p>Ejecución controlada de campañas de ingeniería social simulada (con autorización) para evaluar vulnerabilidades ante estafas digitales.</p>
+        </div>
+        <div class="card">
+            <h3>Auditoría Web Personal</h3>
+            <p>Pruebas de penetración superficial (pentesting) a sitios web propios para detectar fallos de configuración o cabeceras inseguras.</p>
+        </div>
+        <div class="card">
+            <h3>Endurecimiento y Privacidad Remota</h3>
+            <p>Sesión guiada a distancia para configurar 2FA, gestores de contraseñas, blindaje de navegadores y seguridad de cuentas clave.</p>
+        </div>
+        <div class="card">
+            <h3>Análisis y Limpieza de Metadatos</h3>
+            <p>Inspección digital de documentos e imágenes para extraer y eliminar metadatos ocultos (coordenadas GPS, marcas de dispositivos) antes de exponerlos.</p>
+        </div>
+        <div class="card">
+            <h3>Scripts de Alerta y Monitoreo</h3>
+            <p>Creación de herramientas personalizadas (Python / Bash) para vigilar carpetas críticas y detectar accesos no autorizados en tiempo real.</p>
+        </div>
+        <div class="card">
+            <h3>Bots de Telegram para Seguridad</h3>
+            <p>Desarrollo de bots propios y cifrados para notificaciones instantáneas de inicio de sesión y comandos de control remoto.</p>
+        </div>
+        <div class="card">
+            <h3>Escaneo Web Ligero</h3>
+            <p>Desarrollo de scripts rápidos para comprobar certificados SSL, cabeceras de seguridad o puertos abiertos en dominios personales.</p>
+        </div>
+        <div class="card">
+            <h3>Criptografía y Cifrado Local</h3>
+            <p>Creación de programas personalizados para encriptar, desencriptar o destruir de forma segura notas y archivos sensibles en tu disco.</p>
+        </div>
+        <div class="card">
+            <h3>Entornos de Prueba (Sandboxes)</h3>
+            <p>Configuración automatizada de contenedores o máquinas virtuales ligeras para probar scripts y archivos sin arriesgar tu sistema.</p>
+        </div>
+        <div class="card">
+            <h3>Venta de Números Virtuales</h3>
+            <p>Provisión y configuración de líneas virtuales temporales para verificación de cuentas, alta privacidad y gestión de registros digitales.</p>
+        </div>
+        <div class="card">
+            <h3>Creación de Páginas Web</h3>
+            <p>Diseño y desarrollo de sitios web modernos, portafolios, landing pages y plataformas estáticas adaptadas a tus necesidades exactas.</p>
+        </div>
+        <div class="card">
+            <h3>PoCs Educativas y Scripts de Prueba</h3>
+            <p>Desarrollo controlado de pruebas de concepto y scripts demostrativos con fines estrictamente académicos y de análisis defensivo.</p>
+        </div>
     </div>
 
     <div class="about">
         <h2>Perfil Operativo</h2>
-        <p>Operaciones técnicas ejecutadas bajo rigurosos márgenes de legalidad y confidencialidad estricta.</p>
+        <p>Operaciones técnicas ejecutadas bajo rigurosos márgenes de legalidad y confidencialidad estricta orientadas exclusivamente a personas particulares.</p>
     </div>
 
     <div class="cta">
@@ -182,7 +238,6 @@
 <script>
     /* ANTI-HACKING / ANTI-DEBUGGING PERIMETER */
     (function(){
-        // Bloquear clic derecho y atajos de inspección
         document.addEventListener('contextmenu', e => e.preventDefault());
         document.addEventListener('keydown', (e) => {
             if(e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) || (e.ctrlKey && e.key.toUpperCase() === 'U')){
@@ -192,7 +247,6 @@
             }
         });
 
-        // Lógica del Chat y Rate Limiting de Envío (Cooldown 3 segundos)
         const STORAGE_KEY = "secure_user_tickets";
         const DATE_KEY = "secure_token_date";
         const SESSION_KEY = "active_ticket_id";
